@@ -1,0 +1,29 @@
+<h1>Register for new account </h1>
+
+<%= form_tag :action => 'newuser' do %>
+<p>
+   <strong>User ID</strong><br />
+   <%= text_field_tag :userid %>
+</p> 
+
+<p>
+	<strong>Full Name</strong><br />
+	<%= text_field_tag :fullname %>
+</p>
+	<strong>Passoword</strong><br />
+	<%= password_field_tag :password %>
+</p>
+
+<p>
+	<strong>E-mail</strong><br />
+	<%= text_field_tag :email %>
+</p>
+<p>
+	<%= submit_tag "Create Account" %>
+</p>
+<% end %>	
+
+
+
+
+
